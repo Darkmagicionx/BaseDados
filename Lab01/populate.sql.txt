@@ -1,0 +1,82 @@
+-- Informação
+insert into cursos (cur_nome) values('Engenharia Biomédica');
+insert into cursos (cur_nome) values('Engenharia Informática');
+insert into cursos (cur_nome) values('Engenharia Electrónica e Computadores');
+insert into cursos (cur_nome) values('Engenharia do Ambiente');
+                        
+insert into alunos (alu_nome, alu_local, alu_dnsc, alu_sexo, alu_email, alu_cur_id) values ('Joaquim Pires Lopes','lisboa','1995-01-01','M','jpl@gmail.com',2);  
+insert into alunos (alu_nome, alu_local, alu_dnsc, alu_sexo, alu_email, alu_cur_id) values ('Ana Maria Fonseca','Setúbal','1997-03-03','F','ana@sapo.pt',1);  
+insert into alunos (alu_nome, alu_local, alu_dnsc, alu_sexo, alu_email, alu_cur_id) values ('Paula Antunes','Lisboa','1996-07-06','F',null,2);  
+insert into alunos (alu_nome, alu_local, alu_dnsc, alu_sexo, alu_email, alu_cur_id) values ('Joana Ramalho Silva','Costa da Caparica','1984-09-23','F','juana@mac.com',3);  
+insert into alunos (alu_nome, alu_local, alu_dnsc, alu_sexo, alu_email, alu_cur_id) values ('Rui Manuel Silva','Cascais','1994-08-15','M','rms@gmail.com',1);  
+insert into alunos (alu_nome, alu_local, alu_dnsc, alu_sexo, alu_email, alu_cur_id) values ('João Paulo Santos','Lisboa','1991-11-16','M','jps@yahoo.com',1);  
+insert into alunos (alu_nome, alu_local, alu_dnsc, alu_sexo, alu_email, alu_cur_id) values ('Cristina Fernandes Lopes','Lisboa','1996-01-07','F',null,1);  
+insert into alunos (alu_nome, alu_local, alu_dnsc, alu_sexo, alu_email, alu_cur_id) values ('Miguel Pinto Leite','Cascais','1994-01-07','M','mpl@zmail.com',3);  
+insert into alunos (alu_nome, alu_local, alu_dnsc, alu_sexo, alu_email, alu_cur_id) values ('Francisco Costa Rosa',null,'1998-02-16','M',null,4);  
+insert into alunos (alu_nome, alu_local, alu_dnsc, alu_sexo, alu_email, alu_cur_id) values ('Elsa Fialho Pinto','Palmela','1999-10-29','F','elsafi@sapo.pt',1);  
+                        
+insert into departamentos (dep_nome, dep_sigla) values ('Departamento de Sistemas e Informática','DSI');
+insert into departamentos (dep_nome, dep_sigla) values ('Departamento de Engenharia Electrotócnica', 'DEE');
+insert into departamentos (dep_nome, dep_sigla) values ('Departamento de Matemática','DEM');    
+
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Introdução a Programação',4,1);
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Inteligência Artificial',3,1);
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Redes de Computadores',2,1);
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Base de Dados',6,1);
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Complementos de Base de Dados',2,1);
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Análise de Sistemas',1,1);
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Sistemas Distribuídos',1,1);
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Sistemas Digitais',3,2);
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Microprocessadores',2 ,2);
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Electrónica Geral',3,2);
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Análise Matemática I',4,3);
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Análise Matemática II',4,3); 
+insert into disciplinas (dis_nome, dis_creditos, dis_dep_id) values ('Aplicações Multimédia',6,1); 
+
+
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (1,1,1); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (1,2,4); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (1,3,4); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (1,4,3); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (1,5,5); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (1,6,2); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (1,7,5); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (1,8,6); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (1,11,1);
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (2,1,1); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (2,4,5); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (2,8,3); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (2,9,2); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (2,10,1);
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (2,11,3);
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (3,1,3); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (3,11,4);
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (3,12,5);                     		     		     		 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (4,1,3); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (4,4,4); 
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (4,11,4);
+insert into planoestudos (pla_cur_id, pla_dis_id, pla_semestre) values (4,12,5);        
+
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (1,2,1,'2014-09-03','2015-02-11',10);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (1,2,8,'2014-09-05',null,null);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (1,2,9,'2015-10-06',null,null);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (2,1,1,'2010-09-23','2011-02-11',11);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (2,1,11,'2010-09-23','2011-03-12',13);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (2,1,4,'2013-09-05',null,null);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (3,2,1,'2014-10-05','2015-02-11',12);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (3,2,9,'2014-09-06',null,null);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (4,3,12,'2013-10-05','2015-03-11',10);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (5,1,1,'2014-09-07',null,null);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (6,1,1,'2013-09-23',null,null);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (6,1,11,'2013-09-23',null,null);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (7,1,1,'2011-09-08','2012-02-10',13);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (7,1,11,'2011-09-08','2012-03-07',17);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (7,1,4,'2012-09-05','2013-07-12',15);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (7,1,2,'2012-09-05','2013-03-11',13);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (8,3,12,'2014-10-11','2015-03-12',14);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (9,4,1,'2013-10-07',null,null);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (9,4,11,'2013-10-07',null,null);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (9,4,12,'2013-10-07',null,null);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (10,1,11,'2012-09-11','2013-02-12',15);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (10,1,1,'2013-09-12','2014-02-11',12);
+insert into inscricoes (ins_alu_id, ins_pla_cur_id, ins_pla_dis_id, ins_dt_inscricao, ins_dt_avaliacao, ins_nota) values (9,4,4,'2013-09-12','2014-02-11',12);
